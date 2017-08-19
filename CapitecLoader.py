@@ -1,7 +1,7 @@
 import os, csv, json
 from AccountCSVLoader import AccountCSVLoader
 
-debug = True
+debug = False
 
 class CapitecLoader(AccountCSVLoader):
     """Loads Capitec data from a csv file"""
@@ -16,12 +16,10 @@ class CapitecLoader(AccountCSVLoader):
 
         for txn_tag in self._txn_tags:
             if txn_tag['name'] in txn_data:
-                print str.split(str(txn_tag['category']), ':')
                 return str.split(str(txn_tag['category']), ':')
 
         for txn_tag in self._txn_tags2:
             if txn_tag['name'] in str.lower(row[5]):
-                print str.split(str(txn_tag['category']), ':')
                 return str.split(str(txn_tag['category']), ':')
 
         self._print_exception(txn_data, row)

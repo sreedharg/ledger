@@ -37,7 +37,6 @@ class AccountCSVLoader(object):
             self._update_dict(al_accts[0], accts_dictionary)
 
         if len(al_accts) > 1:
-            print al_accts, data, amount, yyyymm, accts_dictionary, data[al_accts[0]]
             self._add_acct_cat(al_accts[1:], data[al_accts[0]], amount, yyyymm, accts_dictionary[al_accts[0]])
 
     def _add_acct(self, al_accts, amount, yyyymm):

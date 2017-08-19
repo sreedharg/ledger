@@ -1,7 +1,7 @@
 import os, csv, json
 from AccountCSVLoader import AccountCSVLoader
 
-debug = True
+debug = False
 
 class DiscoveryLoader(AccountCSVLoader):
     """Loads Discovery data from a csv file"""

@@ -7,27 +7,19 @@ from datetime import date
 import os
 import json
 from configparser import ConfigParser
+
 from CapitecLoader import CapitecLoader
 from DiscoveryLoader import DiscoveryLoader
 from StandardBankLoader import StandardBankLoader
 
-with open('config.json') as json_data_file:
-    data = json.load(json_data_file)
-
 accounts = {}
-
 accts_dictionary = {}
 
-first_capitec_entry = 0
 count = 0
 level = 2
 
-exception_file = open('./reports/exceptions.txt', 'w')
 report_file = open('./reports/report.txt', 'w')
 csv_report_file = open('./reports/report.csv', 'w')
-
-txn_tags = data["txn_tags"]
-txn_tags2 = data["txn_tags2"]
 
 def pretty_print_monthly_detail():
     tab = 75
@@ -164,17 +156,14 @@ def read_files():
     for dirname, dirnames, filenames in os.walk('./txn-data'):
         for filename in filenames:
             if 'extr' in filename:
-                #read_capitec_txns(dirname, filename)
                 capitec_loader = CapitecLoader(dirname, filename, accts_dictionary, accounts)
                 accounts, accts_dictionary = capitec_loader.load()
 
             if '490137' in filename:
-                #read_discovery_txns(dirname, filename)
                 discovery_loader = DiscoveryLoader(dirname, filename, accts_dictionary, accounts)
                 accounts, accts_dictionary = discovery_loader.load()
 
             if 'statement' in filename:
-                #read_sb_txns(dirname, filename)
                 standard_bank_loader = StandardBankLoader(dirname, filename, accts_dictionary, accounts)
                 accounts, accts_dictionary = standard_bank_loader.load()
 
@@ -200,9 +189,7 @@ if __name__ == '__main__':
                 print ('level must be greater than 0')
                 sys.exit()
 
-
     read_files()
 
-    exception_file.close()
     report_file.close()
     csv_report_file.close()
