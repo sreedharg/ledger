@@ -1,6 +1,7 @@
 # ledger
 Mini ledger app / command line based with .csv input
 
+##Input
 The app currently handles csv files from the following banks:
 1. Capitec bank
    - file contains 'extr' in its name
@@ -14,6 +15,26 @@ The app currently handles csv files from the following banks:
   - file contains '490137' in its name - this might be different to different accounts
   - sample format: 03/01/2017,-591.26,0, PNP CAPE TOWN       
 
+Transaction data must be under txn-data.
+
+##How to run?
+
+Run <code>python LedgerApp.py</code> 
+
+##Output
 Reports and exceptions are produced under reports.
 
-Transaction data must be under txn-data.
+Sample:
+
+--------------------------------------------------------------------------------------------------------------------
+                                                                                        2017/01          Total
+--------------------------------------------------------------------------------------------------------------------
+
+Expense                                                                                 4672.45  |     4672.45
+                                                                                ---------------     ---------------     
+          Banking-fees                                                                   249.65              249.65 
+          Comms                                                                        2,078.87             2078.87 
+          Cosmetics                                                                        0.00                0.00 
+          Eating-out                                                                   2,218.95             2218.95 
+          Electronics                                                                    124.98              124.98 
+
