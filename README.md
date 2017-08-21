@@ -20,6 +20,8 @@ The app currently handles csv files from the following banks:
 
 Transaction data must be under txn-data.
 
+The config.json will contain the info to categorize the transactions.
+
 ## How to run?
 
 Run <code>python LedgerApp.py</code> 
