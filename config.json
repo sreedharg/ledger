@@ -21,8 +21,14 @@
         {"name": "mu ti",     "category": "Expense:Cosmetics" },
         {"name": "twt somerset",     "category": "Expense:auto" },
         {"name": "airvent",     "category": "Expense:home-impr" },
+        {"name": "ray ban",     "category": "Expense:life-style" },
+        {"name": "sunglass",     "category": "Expense:life-style" },
+        {"name": "jane's",     "category": "Expense:life-style" },
 
         {"name": "steers",          "category": "Expense:Eating-out:steers"},
+        {"name": "spier",          "category": "Expense:Eating-out:spier"},
+        {"name": "fishaway",          "category": "Expense:Eating-out:fishaway"},
+
         {"name": "wild clover family",          "category": "Expense:Eating-out:wild clover"},
         {"name": "manuka",          "category": "Expense:Eating-out:manuka"},
         {"name": "kinekor",          "category": "Expense:Movies"},
@@ -49,7 +55,15 @@
         {"name": "mcd",     "category": "Expense:Eating-out:MacDonalds"},
         {"name": "espana",     "category": "Expense:Eating-out:Espana"},
         {"name": "ishushu",     "category": "Expense:Eating-out:ishushu"},
+        {"name": "mr delivery",     "category": "Expense:Eating-out:mrd"},
+        {"name": "brenaissance",     "category": "Expense:Eating-out:brenaissance"},
+        {"name": "flm",     "category": "Expense:Eating-out:food-lovers"},
+        {"name": "basic bistro",     "category": "Expense:Eating-out:basic-bistro"},
+        {"name": "anat",     "category": "Expense:Eating-out:anat"},
+        {"name": "the goos",     "category": "Expense:Eating-out:the-goose-roasters"},
+        {"name": "bluebird caf",     "category": "Expense:Eating-out:bluebird"},
         {"name": "liquor",     "category": "Expense:liquor"},
+
         {"name": "stones",     "category": "Expense:liquor"},
         {"name": "dstv",     "category": "Expense:dstv"},
         {"name": "tv licence",     "category": "Expense:dstv"},
@@ -66,8 +80,13 @@
 
         {"name": "bp disa",     "category": "Expense:auto:Fuel"},
         {"name": "engen",     "category": "Expense:auto:Fuel"},
-        {"name": "wordworth",     "category": "Expense:books"},
+        {"name": "shell",     "category": "Expense:auto:Fuel"},
+
+        {"name": "wordsworth",     "category": "Expense:books"},
         {"name": "bargain books",     "category": "Expense:books"},
+        {"name": "exclusive books",     "category": "Expense:books"},
+        {"name": "the book people",     "category": "Expense:books"},
+
         {"name": "toys",     "category": "Expense:toys"},
         {"name": "tixsa",     "category": "Expense:fitness:colorrun"},
         {"name": "color run",     "category": "Expense:fitness:colorrun"},
@@ -82,15 +101,25 @@
 
         {"name": "takealot",      "category": "Expense:online-shopping"},
         {"name": "edgars",      "category": "Expense:clothing"},
+        {"name": "superbalist",      "category": "Expense:clothing"},
+
+        {"name": "old khaki",      "category": "Expense:clothing"},
         {"name": "h and m",      "category": "Expense:clothing"},
-        {"name": "cape union mart",      "category": "Expense:clothing"},
+        {"name": "cape union",      "category": "Expense:clothing"},
         {"name": "footgear",      "category": "Expense:clothing"},
+        {"name": "scarfs",      "category": "Expense:clothing"},
         {"name": "mr price sport",      "category": "Expense:sports"},
+        {"name": "sports",      "category": "Expense:sports"},
+
+
         {"name": "benbel",      "category": "Expense:gardening"},
         {"name": "birds",      "category": "Expense:pets"},
         {"name": "watch penalty",      "category": "Expense:Electronics"},
         {"name": "kindle",      "category": "Expense:books"},
         {"name": "vredelus",      "category": "Expense:school"},
+        {"name": "monkeynastix",      "category": "Expense:school"},
+        {"name": "music and move",      "category": "Expense:school"},
+        {"name": "l de cock",      "category": "Expense:school"},
         {"name": "somerset sport",      "category": "Expense:school"},
         {"name": "sportmans",      "category": "Expense:school"},
         {"name": "sportsmans",      "category": "Expense:school"},
@@ -104,9 +133,15 @@
         {"name": "crazy store",      "category": "Expense:misc"},
         {"name": "r5",      "category": "Expense:misc"},
         {"name": "baby city",      "category": "Expense:baby"},
-        {"name": "city of cape",      "category": "Expense:municipality"},
-
+        {"name": "paycity coct",      "category": "Expense:municipality"},
+        {"name": "city of cape town",      "category": "Expense:municipality"},
+        {"name": "lilian",      "category": "Expense:maid"},
+        {"name": "ecco",      "category": "Expense:coffee"},
+        {"name": "wild bre",      "category": "Expense:coffee"},
         {"name": "salary",      "category": "Income:salary"},
+        {"name": "stansal",      "category": "Income:salary"},
+        {"name": "stancom",      "category": "Income:salary"},
+
         {"name": "staff claim", "category": "Income:staff-claim"},
         {"name": "credit interest", "category": "Income:Interest"},
         {"name": "interest received", "category": "Income:Interest"},
@@ -116,19 +151,28 @@
         {"name": "disc memb 0003717442", "category": "Income:DiscoveryRefund"},
 
         {"name": "service fee", "category": "Expense:Banking-fees"},
+        {"name": "auth fee", "category": "Expense:Banking-fees"},
         {"name": "monthly fee", "category": "Expense:Banking-fees"},
         {"name": "ucount",      "category": "Expense:Banking-fees"},
         {"name": "account fee",      "category": "Expense:Banking-fees"},
         {"name": "1513759483",      "category": "Expense:Team-fund"},
 
         {"name": "sahl",        "category": "Expense:home-loan"},
+        {"name": "sahomelo",        "category": "Expense:home-loan"},
+
+        {"name": "netflix",        "category": "Expense:entertainment"},
+        {"name": "amazon",        "category": "Expense:entertainment"},
+        {"name": "m-choice",        "category": "Expense:entertainment"},
+
 
         {"name": "vetus",       "category": "Expense:security"},
         {"name": "hcw",         "category": "Expense:security"},
 
         {"name": "discinsure",  "category": "Expense:insurance"},
+        {"name": "disc prem",  "category": "Expense:insurance"},
         {"name": "gapcover",    "category": "Expense:insurance"},
-
+        {"name": "horizon pool", "category": "Expense:Swimming-pool" },
+        {"name": "k enfield", "category": "Expense:Swimming-pool" },
         {"name": "waltons",    "category": "Expense:stationary"},
         {"name": "pna",    "category": "Expense:stationary"},
         {"name": "cna",    "category": "Expense:stationary"},
@@ -136,11 +180,15 @@
         {"name": "discovery credit",    "category": "Liabilities:Discovery Credit card"},
         {"name": "discovery credit",    "category": "Liabilities:Discovery Credit card"},
         {"name": "credit",    "category": "Liabilities:Standard Bank Credit card"},
+        {"name": "standard bank titani",    "category": "Liabilities:Standard Bank Credit card"},
         {"name": "standard bank master",    "category": "Liabilities:Standard Bank Credit card"},
         {"name": "credit card",    "category": "Liabilities:Standard Bank Credit card"},
         {"name": "sreedhar - capitec",  "category": "Assets:Capitec"},
+        {"name": "internet banking payment",  "category": "Assets:Capitec"},
+        {"name": "s gundappa",  "category": "Assets:Capitec"},
         {"name": "capitec sweep",  "category": "Assets:Shares"},
         {"name": "i/bank payment",      "category": "Assets:SB Cheque Account"},
+        {"name": "payment thank you",      "category": "Assets:Standard Bank Credit card"},
         {"name": "from-stan",      "category": "Assets:SB Cheque Account"}
         ],
 
@@ -149,6 +197,7 @@
         {"name": "purchase/cashback",      "category": "Expense:Banking-fees"},
         {"name": "cash withdrawal",    "category": "Expense:cash"},
         {"name": "cash withd",    "category": "Expense:cash"},
+        {"name": "autobank",    "category": "Expense:cash"},
         {"name": "monthly interest",    "category": "Income:interest"},
         {"name": "interest received",    "category": "Income:interest"}
         ]

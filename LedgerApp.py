@@ -4,6 +4,7 @@ import os
 from CapitecLoader import CapitecLoader
 from DiscoveryLoader import DiscoveryLoader
 from StandardBankLoader import StandardBankLoader
+from StandardBankCCLoader import StandardBankCCLoader
 
 class LedgerApp(object):
     def __init__(self):
@@ -128,9 +129,9 @@ class LedgerApp(object):
         self._pretty_print_monthly_detail()
 
     def read_files(self):
-        for dirname, dirnames, filenames in os.walk('./txn-data'):
+        for dirname, _ , filenames in os.walk('./txn-data'):
             for filename in filenames:
-                if 'extr' in filename:
+                if 'CapitecBank' in filename:
                     capitec_loader = CapitecLoader(dirname, filename, self._accts_dictionary, self._data)
                     self._data, self._accts_dictionary = capitec_loader.load()
 
@@ -138,9 +139,14 @@ class LedgerApp(object):
                     discovery_loader = DiscoveryLoader(dirname, filename, self._accts_dictionary, self._data)
                     self._data, self._accts_dictionary = discovery_loader.load()
 
-                if 'statement' in filename:
+                if 'statement-06' in filename:
                     standard_bank_loader = StandardBankLoader(dirname, filename, self._accts_dictionary, self._data)
                     self._data, self._accts_dictionary = standard_bank_loader.load()
+
+                if 'statement-5239' in filename:
+                    standard_bank_cc_loader = StandardBankCCLoader(dirname, filename, self._accts_dictionary, self._data)
+                    self._data, self._accts_dictionary = standard_bank_cc_loader.load()
+
 
     def cleanup(self):
         self._report_file.close()

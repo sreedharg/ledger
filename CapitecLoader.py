@@ -36,15 +36,16 @@ class CapitecLoader(AccountCSVLoader):
         with open(os.path.join(self._dirname, self._filename), 'rt') as f:
             reader = csv.reader(f)
             for row in reader:
+                print(row)
                 if debug:
-                    print '-' * 100
-                    print row
-                    print json.dumps(self._data , sort_keys=True,
-                        indent=4, separators=(',', ': '))
-                    print json.dumps(self._accts_dictionary, sort_keys=True,
-                        indent=4, separators=(',', ': '))
-                    print '-' * 100
-                if row[0] == 'Account':
+                    print ('-' * 100)
+                    print (row)
+                    print (json.dumps(self._data , sort_keys=True,
+                        indent=4, separators=(',', ': ')))
+                    print (json.dumps(self._accts_dictionary, sort_keys=True,
+                        indent=4, separators=(',', ': ')))
+                    print ('-' * 100)
+                if len(row) < 3 or row[0] == 'Account':
                     continue
 
                 yyyymm = row[1][6:10] + row[1][3:5]

@@ -33,14 +33,15 @@ class DiscoveryLoader(AccountCSVLoader):
         with open(os.path.join(self._dirname, self._filename), 'rt') as f:
             reader = csv.reader(f)
             for row in reader:
-                if row[0] in ['', 'ACCOUNT TRANSACTION HISTORY', 'Name:', 'Account:', 'Date']:
+                print(row)
+                if len(row) == 0 or row[0] in ['', 'ACCOUNT TRANSACTION HISTORY', 'Name:', 'Account:', 'Date']:
                     continue
 
                 if row[0] == 'Balance:':
                     opening_bal = float(row[1])
                     continue
 
-                yyyymm = row[0][6:10] + row[0][3:5]
+                yyyymm = row[0][0:4] + row[0][5:7]
 
                 if first_discovery_entry == 0:
                     first_discovery_entry = 1

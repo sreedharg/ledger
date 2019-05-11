@@ -17,7 +17,7 @@ class AccountCSVLoader(object):
         self._txn_tags2 = config_data["txn_tags2"]
 
     def _print_exception(self, txn_data, row):
-        self._exception_file.write(''.join(row) + '\n')
+        self._exception_file.write(', '.join(row) + '\n')
 
 
     def _update_dict(self, acct, accts_dictionary):
